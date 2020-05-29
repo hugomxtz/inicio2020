@@ -1,0 +1,55 @@
+ <meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia() {
+
+        return Math.round(Math.random() * 100);
+    }   
+
+    var numeroPensado = sorteia();
+
+    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+    } else {
+
+        mostra("Você errou!");
+    }
+</script>
+
+<meta charset="Utf-8">
+<script>
+	function pula() {
+		
+		document.write("<br><br>");
+	}
+
+	
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+
+	var contador = 2;
+	while(contador <= 100) {
+		
+		mostra(contador);
+		contador = contador + 2; //incrementar de 2 em 2.
+	}
+
+	mostra("<h1>FIM<h1>");
+

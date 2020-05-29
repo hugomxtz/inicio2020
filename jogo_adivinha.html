@@ -1,0 +1,72 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+	}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+	}
+
+	var numeroPensado = 5;
+
+	var chute = parseInt(prompt("Digite seu chute !"));
+
+	if (chute == numeroPensado) {
+		mostra("Você Acertou!");
+	}
+	if (chute != numeroPensado) {
+		mostra("Você errou, o numero pensado foi: " + numeroPensado);
+
+
+	}
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+	}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+	}
+
+	var numeroPensado = Math.round (Math.random() * 20);
+
+	var tentativas = 1;
+
+	while(tentativas <= 3) {
+
+			console.log(numeroPensado);
+		//console.log - e apenas um test de erro e ecerto.
+
+		var chute = parseInt(prompt("Digite seu chute !"));
+
+		if (chute == numeroPensado) {
+			
+			mostra("<h3>Você Acertou, o numero Pensado foi: <h3>" +  + numeroPensado);
+			break;
+
+		} else {
+			 mostra("<h1>Você errou !!!<h1> ");
+			}
+
+			tentativas++;
+	}
+	
+	mostra("<h1>FIM<h1>");
+	
+</script>
